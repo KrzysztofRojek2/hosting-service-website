@@ -1,0 +1,45 @@
+.addOn {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(226, 225, 225);
+    box-shadow: var(--small-shadow);
+    border-radius: 1rem;
+    padding: 3rem 5rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 80%;
+}
+.addOns__text {
+    width: 100%;
+}
+
+.addOns__text p{
+    color: #5b5b5b;
+}
+
+.addOns__price {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+
+.addOn:hover {
+    filter: var(--brightness-on-hover); 
+}
+
+@media (max-width: 600px) {
+    .addOn {
+        padding: 1rem 1.5rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .addOn {
+        flex-direction: column;
+    }
+    .addOns__price {
+        justify-content: center;
+    }
+  }
+  

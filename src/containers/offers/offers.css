@@ -1,0 +1,22 @@
+.offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px,1fr));
+    gap:  3rem;
+    max-width: 90%;
+    min-height: 40rem;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+}
+.offers__header {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+@media (max-width: 450px) {
+
+    .offers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

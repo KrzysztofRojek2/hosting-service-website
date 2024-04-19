@@ -1,0 +1,23 @@
+.question {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    cursor: pointer;
+    width:  100%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+
+.question__answear {
+    padding-top: 1rem;
+    line-height: 1.6;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease-out;
+}
+.question.active .question__answear {
+    max-height: 100px;
+}

@@ -1,0 +1,26 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 5rem;
+}
+.questions h1 {
+    padding-bottom: 3rem;
+    color: var(--text-color);
+}
+
+.questions-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 400px) {
+    .questions-wrapper h3 {
+        font-size: 1rem;
+    }
+    .questions-wrapper p {
+        font-size: 0.8rem;
+    }
+}

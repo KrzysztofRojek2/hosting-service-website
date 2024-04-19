@@ -1,0 +1,60 @@
+.offer {
+    border: 1px solid lightgray;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 3rem;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: var(--small-shadow);
+}
+.offer:hover {
+    filter: var(--brightness-on-hover); 
+}
+
+.offer__price {
+    width: 100%;
+    border-bottom: 2px solid var(--secondary-color);
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.offer__price .price-number {
+    font-weight: 600;
+    font-size:  40px;
+}
+
+.offer__advantages{
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.offer__advantages p{
+    font-size: 13px;
+    text-align: left;
+}
+
+.offer__advantages p::before {
+    content: '•'; 
+    color: var(--secondary-color);
+    font-weight: bold; 
+    display: inline-block; 
+    width:  1em; 
+    margin-left: -1em; 
+  }
+
+.offer .button {
+    max-width: 90%;
+}
+
+@media (max-width: 450px) {
+
+    .offer {
+        padding: 1rem 2rem;
+    }
+}

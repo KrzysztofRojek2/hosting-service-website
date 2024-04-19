@@ -1,0 +1,42 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(226, 225, 225);
+    box-shadow: var(--small-shadow);
+    border-radius: 1rem;
+    max-width: 250px;
+    min-height: 300px;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform  0.3s ease;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card__img{
+    max-width: 100px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__text p {
+    overflow: hidden;
+    max-height:  0;
+    transition: max-height  0.3s ease-out;
+
+    color: #5b5b5b;
+    max-width: 80%;
+}
+
+.card:hover .card__text p {
+    max-height:  100px;
+  }

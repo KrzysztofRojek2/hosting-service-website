@@ -1,0 +1,10 @@
+.clients-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.clients-section__header {
+    padding: 3rem;
+}
